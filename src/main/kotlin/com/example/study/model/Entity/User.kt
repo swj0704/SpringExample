@@ -8,11 +8,11 @@ data class User(
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         val id: Long? = null,
-        val account: String? = null,
-        val email: String? = null,
-        val phoneNumber: String? = null,
-        val createAt: LocalDateTime? = null,
-        val createBy: String? = null,
+        var account: String? = null,
+        var email: String? = null,
+        var phoneNumber: String? = null,
+        var createAt: LocalDateTime? = null,
+        var createBy: String? = null,
         val updateAt: LocalDateTime? = null,
         val updateBy: String? = null
 )
